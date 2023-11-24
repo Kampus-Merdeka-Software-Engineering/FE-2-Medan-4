@@ -208,7 +208,7 @@
     padding-top: 75px;
   }
 
- @media screen and (min-width: 375px) {
+ @media screen and (min-width: 375px) and (max-width: 423px) {
     .bannerteks2{
       margin-top: -10%;
     }
@@ -217,16 +217,16 @@
     }
   }
 
-  @media screen and (min-width: 425px) {
+  @media screen and (min-width: 424px) and (max-width: 450px){
     .bannerteks2{
       margin-top: -10%;
     }
     .banner2{
-      margin-top: -55%;
+      margin-top: -50%;
     }
   }
 
-  @media screen and (min-width: 426px) and (max-width: 480px) {
+  @media screen and (min-width: 451px) and (max-width: 480px) {
     .bannerteks{
       margin-top: -5%;
     }
@@ -241,7 +241,7 @@
   
   @media screen and (min-width: 481px) and (max-width: 1024px) {
     .banner{
-      margin-bottom: 90%;
+      margin-bottom: 10%;
     }
     .bannerteks{
       margin-top: -5%;
