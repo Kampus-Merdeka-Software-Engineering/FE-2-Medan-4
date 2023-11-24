@@ -167,8 +167,7 @@
     }
   }
 
-  /* Banner */
-
+/*banner*/
 .banner {
   margin: 0;
   background-image: url(../assets/img/home.png);
@@ -413,6 +412,7 @@
     }
   }
 
+
    /*Output*/
   .output-container {
     max-width: 600px;
@@ -431,6 +431,8 @@
     margin-bottom: 10px;
     border-radius: 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    margin-right: 10px;
   }
   
   .faq-item i {
@@ -461,8 +463,11 @@
   .pagination-container button:hover {
     background-color: #ddd;
   }
+  
 
-/*Bagian Footer*/
+
+
+ /*Bagian Footer*/
  .footer {
   background-color: #005694;
   bottom: 0;
