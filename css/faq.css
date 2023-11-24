@@ -208,7 +208,16 @@
     padding-top: 75px;
   }
 
- @media screen and (min-width: 200px) and (max-width: 423px) {
+ @media screen and (min-width: 100px) and (max-width: 375px) {
+    .bannerteks2{
+      margin-top: -15%;
+    }
+    .banner2{
+      margin-top: -50%;
+    }
+  }
+  
+  @media screen and (min-width: 375px) and (max-width: 423px) {
     .bannerteks2{
       margin-top: -10%;
     }
@@ -253,7 +262,6 @@
       margin-top: -2%; 
     }
     }
-
   /* faq */
   .faq {
     min-height: 150vh;
@@ -413,6 +421,9 @@
       font-size: 25px;
     }
   
+    .container form{
+      margin-bottom: 10%;
+    }
     .container form .form-row {
       flex-direction: column;
     }
@@ -423,8 +434,8 @@
     }
   
     .container form .form-row.submit-btn .input-data {
-      width: 30% !important;
-      margin-left: 33%;
+      width: 70% !important;
+      margin-left: 15%;
     }
   }
 
