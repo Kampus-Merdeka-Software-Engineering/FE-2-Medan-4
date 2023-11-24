@@ -1,5 +1,5 @@
 # FE-2-Medan-4
-FE-2-section-medan-group-4 created by GitHub Classroom
+FE-2-section-medan-group-4 created by GitHub Classroom<br>
 TRAVEL WEBSITE <br>
-GoTrip
-DEMO : https://kampus-merdeka-software-engineering.github.io/FE-2-Medan-4/
+GoTrip<br>
+<a href="URL_tujuan">Teks Tautan</a>
