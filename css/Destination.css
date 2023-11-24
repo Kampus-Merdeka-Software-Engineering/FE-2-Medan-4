@@ -211,15 +211,15 @@
     margin-top: 30px;
 }
 
-@media screen and (max-width: 480px) {
-.first{
-  margin-top: 90%;
-}
-.bannerteks{
-  margin-top: 10%;
-}
+@media screen and (min-width: 375px) {
+  .first{
+    margin-top: 70%;
+  }
+  .bannerteks{
+    margin-top: -3%;
+  }
+  }
 
-}
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .first{
@@ -229,7 +229,6 @@
     margin-top: 10%;
   }
 }
-
 
 .island-catagory {
     display: block;
