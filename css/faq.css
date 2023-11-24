@@ -208,27 +208,51 @@
     padding-top: 75px;
   }
 
-  @media screen and (max-width: 480px) {
+ @media screen and (min-width: 375px) {
+    .bannerteks2{
+      margin-top: -10%;
+    }
+    .banner2{
+      margin-top: -55%;
+    }
+  }
+
+  @media screen and (min-width: 425px) {
+    .bannerteks2{
+      margin-top: -10%;
+    }
+    .banner2{
+      margin-top: -55%;
+    }
+  }
+
+  @media screen and (min-width: 426px) and (max-width: 480px) {
     .bannerteks{
-      margin-top: 10%;
+      margin-top: -5%;
     }
     .banner2{
     margin-top: -90%;  
     }
+    .bannerteks2{
+      margin-top: -5%;
+    }
+    
   }
   
   @media screen and (min-width: 481px) and (max-width: 1024px) {
+    .banner{
+      margin-bottom: 90%;
+    }
     .bannerteks{
-      margin-top: 10%;
+      margin-top: -5%;
     }
     .banner2{
-      margin-top: -50%;  
+      margin-top: -25%;  
       }
     .bannerteks2{
-      margin-top: 10%; 
+      margin-top: -2%; 
     }
     }
-
 
   /* faq */
   .faq {
