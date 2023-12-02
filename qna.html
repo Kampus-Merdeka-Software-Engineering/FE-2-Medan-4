@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/contactUs.css" />
+    <link rel="stylesheet" href="css/qna.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -20,7 +20,7 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
-    <title>Contact Us</title>
+    <title>qna</title>
   </head>
   <body>
     <!--Navbar-->
@@ -45,42 +45,24 @@
       </div>
     </header>
 
-    <!--banner-->
+    <!-- BANNER TITLE -->
     <section class="banner">
       <div class="bannerteks">
-        <h2>CONTACT US</h2>
+        <h2>QnA</h2>
       </div>
     </section>
 
-    <!--CONTACT US-->
-    <section class="contactUs">
+    <!--qna-->
+    <section class="qna">
       <div class="container">
-        <div class="title">Contact Us Form</div>
+        <div class="title">Drop Your Question</div>
 
         <form action="" id="formCustomer">
           <div class="form-row">
             <div class="input-data">
-              <input type="text" required id="firstName" />
+              <input type="name" required id="name" autocomplete="off" />
               <div class="underline"></div>
-              <label for="">First Name</label>
-            </div>
-            <div class="input-data">
-              <input type="text" required id="lastName" />
-              <div class="underline"></div>
-              <label for="">Last Name</label>
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="input-data">
-              <input type="email" required id="email" />
-              <div class="underline"></div>
-              <label for="">Email Address</label>
-            </div>
-            <div class="input-data">
-              <input type="tel" required id="phone" />
-              <div class="underline"></div>
-              <label for="">Phone Number</label>
+              <label for="">Name</label>
             </div>
           </div>
 
@@ -88,21 +70,38 @@
             <div class="input-data textarea">
               <textarea required id="message"></textarea>
               <div class="underline"></div>
-              <label for="">Write your message</label>
+              <label for="">Write your question</label>
             </div>
           </div>
 
           <div class="form-row submit-btn">
             <div class="input-data">
               <div class="inner"></div>
-              <input type="submit" value="Submit" />
+              <input type="submit" value="submit" />
             </div>
           </div>
         </form>
       </div>
     </section>
 
-    <!--footer-->
+    <!-- BANNER TITLE -->
+    <section class="banner2">
+      <div class="bannerteks2">
+        <h2>Question And Answer</h2>
+      </div>
+    </section>
+
+    <!--OUTPUT-->
+
+    <section id="outputSection" class="output-container">
+      <!-- Output will be dynamically generated here -->
+    </section>
+
+    <div id="pagination" class="pagination-container">
+      <!-- Pagination controls will be dynamically generated here -->
+    </div>
+
+    <!--FOOTER-->
     <footer class="footer">
       <div class="footer-left">
         <h3>Patnership</h3>
@@ -155,6 +154,6 @@
       </div>
     </footer>
 
-    <script src="js/contactUs.js"></script>
+    <script src="js/qna.js"></script>
   </body>
 </html>
