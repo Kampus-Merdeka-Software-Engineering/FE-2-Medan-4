@@ -1,247 +1,242 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #005694a8;
-    border-width: 1px;
-    transition-duration: 0.5s;
-    z-index: 2;
-  }
-  
-  .navcount {
-    width: 100%;
-    max-width: 1300px;
-    margin: auto;
-    position: relative;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #005694a8;
+  border-width: 1px;
+  transition-duration: 0.5s;
+  z-index: 2;
+}
+
+.navcount {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 80px;
+}
+
+.navbar-left {
+  display: flex;
+}
+
+.logo {
+  color: white;
+  font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype",
+    Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: 1.5px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.logoimg {
+  width: 70px;
+  height: 50px;
+  top: 0px;
+  left: 0px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 60px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 550;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  border-bottom: 2px solid transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-active {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 550;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-link:hover {
+  color: #07e0fd;
+  border-bottom: 1px solid white;
+}
+
+.nav-active:hover {
+  color: #07e0fd;
+  border-bottom: 1px solid white;
+}
+
+.nav-icon {
+  display: none;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
   .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 80px;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
   }
-  
+  .logo {
+    display: none;
+  }
   .navbar-left {
     display: flex;
+    justify-content: space-between;
   }
-  
-  .logo {
-    color: white;
-    font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype",
-      Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
-    font-weight: 600;
-    font-size: 26px;
-    letter-spacing: 1.5px;
-    margin-left: 10px;
-    margin-top: 10px;
-  }
-
-  .logoimg {
-    width: 70px;
-    height: 50px;
-    top: 0px;
-    left: 0px;
-  }
-  
-  
-  .navbar-right {
-    display: flex;
-    gap: 60px;
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  .nav-link {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 550;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    border-bottom: 2px solid transparent;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  
+  .nav-link,
   .nav-active {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 550;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
-  
-  .nav-link:hover {
-    color: #07E0FD;
-    border-bottom: 1px solid white;
+  .nav-first {
+    margin-top: 20px;
   }
-  
-  .nav-active:hover {
-    color: #07E0FD;
-    border-bottom: 1px solid white;
+  .nav-active {
+    background: linear-gradient(90deg, #2993a8a8 0%, #025465a8 100%);
+    border-top: 1px solid #895e3f;
+    border-width: 1px;
   }
-  
   .nav-icon {
+    align-self: center;
+    padding-right: 30px;
+  }
+  .navbar-right {
+    display: block;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar-right a {
     display: none;
-    color: white;
   }
-  
-  @media screen and (max-width: 800px) {
-    .navbar {
-      display: block;
-      padding-left: 0;
-      padding-right: 0;
-    }
-    .logo {
-     display : none;
-    }
-    .navbar-left {
-      display: flex;
-      justify-content: space-between;
-    }
-    .nav-link,
-    .nav-active {
-      font-size: 17px;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-    .nav-first {
-      margin-top: 20px;
-    }
-    .nav-active {
-      background: linear-gradient(90deg, #2993a8a8 0%, #025465a8 100%);
-      border-top: 1px solid #895e3f;
-      border-width: 1px;
-    }
-    .nav-icon {
-      align-self: center;
-      padding-right: 30px;
-    }
-    .navbar-right {
-      display: block;
-    }
+  .navbar-left a.nav-icon {
+    float: right;
+    display: block;
   }
-  @media screen and (max-width: 800px) {
-    .navbar-right a {
-      display: none;
-    }
-    .navbar-left a.nav-icon {
-      float: right;
-      display: block;
-    }
+}
+@media screen and (max-width: 800px) {
+  .navbar-right.responsive {
+    position: relative;
   }
-  @media screen and (max-width: 800px) {
-    .navbar-right.responsive {
-      position: relative;
-    }
-    .navbar-left.responsive .nav-icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .navbar-right.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
-
-  @media screen and (min-width: 481px) and (max-width: 880px) {
-    .logo {
-      display: none;
-    }
-  }
-
-  /* banner */
-.banner {
+  .navbar-left.responsive .nav-icon {
     position: absolute;
-    top: 0;
-    left: 0;
     right: 0;
-    bottom: 0;
-    background-image: url("../assets/img/RajaAmpat.jpg");
-    width: 100%;
-    height: 35vh;
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
+    top: 0;
   }
-  .bannerteks {
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 120px;
+  .navbar-right.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
+}
+
+@media screen and (min-width: 481px) and (max-width: 880px) {
+  .logo {
+    display: none;
+  }
+}
+
+/* banner */
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../assets/img/RajaAmpat.jpg");
+  width: 100%;
+  height: 35vh;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.bannerteks {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 120px;
+}
 
 .center-text {
-    text-align: center;
-
+  text-align: center;
 }
 
 .center-text h2 {
-    text-decoration: underline;
-    text-decoration-color: #07E0FD;
-    text-decoration-thickness: 5px ;
-    font-size: 30px;
-    color: #005C84;
-    font-weight: 600;
-    margin-bottom: 10px;
-
+  text-decoration: underline;
+  text-decoration-color: #07e0fd;
+  text-decoration-thickness: 5px;
+  font-size: 30px;
+  color: #005c84;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.first{
-    margin-top: 280px;
+.first {
+  margin-top: 280px;
 }
 
-.second{
-    margin-top: 30px;
+.second {
+  margin-top: 30px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 480px){
-  .first{
+@media screen and (min-width: 375px) and (max-width: 480px) {
+  .first {
     margin-top: 70%;
   }
-  .bannerteks{
+  .bannerteks {
     margin-top: -3%;
   }
-  }
-
+}
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-  .first{
+  .first {
     margin-top: 50%;
   }
-  .bannerteks{
+  .bannerteks {
     margin-top: 10%;
   }
 }
 
 .island-catagory {
-    display: block;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #000000;
-    margin-top: 16px;
-    margin-left: 15px;
-  }
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 16px;
+  margin-left: 15px;
+}
 
-  
-  
 /* destination */
 
 .destination-content {
@@ -253,15 +248,15 @@
   padding: 1rem;
 }
 
-.destination-content .row{
+.destination-content .row {
   margin-top: 20px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1rem;
 }
 
-.button{
-  background: #2D95E1;
+.button {
+  background: #2d95e1;
   color: white;
   font-size: 15px;
   font-weight: 500;
@@ -274,15 +269,14 @@
 
 .button:hover {
   transform: translate();
-  border: 2px solid ;
+  border: 2px solid;
   color: rgb(255, 255, 255);
-  background-color:#2BD9FE ;
+  background-color: #2bd9fe;
 }
 
-
 .box {
-  position: relative; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); 
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   padding-bottom: 10px;
 }
@@ -293,7 +287,7 @@
   object-fit: cover;
   border-radius: 20px;
   filter: brightness(70%);
-  transition: all .3s cubic-bezier(0.499, 0.05, 0.55, 0.95);
+  transition: all 0.3s cubic-bezier(0.499, 0.05, 0.55, 0.95);
   will-change: filter;
   display: block;
 }
@@ -316,8 +310,8 @@
   margin-left: 12px;
 }
 
-.box p{
-  color: #2D95E1;
+.box p {
+  color: #2d95e1;
   margin-left: 12px;
   margin-top: -12px;
 }
@@ -329,12 +323,12 @@
   margin-left: 12px;
 }
 
-.box .btn{
+.box .btn {
   margin-top: 20px;
 }
 
 .box img:hover {
-  filter: brightness(120% ) ;
+  filter: brightness(120%);
   transform: scale(1.04);
   cursor: pointer;
 }
@@ -430,7 +424,7 @@
 }
 
 .footer .footer-center i:hover {
-  background-color: #07E0FD;
+  background-color: #07e0fd;
 }
 
 .footer .footer-center p {
@@ -443,7 +437,7 @@
 .footer .footer-center p span {
   display: block;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 2;
 }
 
@@ -492,7 +486,7 @@
 }
 
 .footer .footer-media a:hover {
-  background-color: #07E0FD;
+  background-color: #07e0fd;
 }
 
 @media (max-width: 880px) {
