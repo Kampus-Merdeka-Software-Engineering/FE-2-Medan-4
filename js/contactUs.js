@@ -41,7 +41,7 @@ formCustomer.addEventListener("submit", (e) => {
     message: message.value,
   };
 
-  fetch("https://puzzled-hare-fashion.cyclic.app//proses_feedback", {
+  fetch("https://jade-enthusiastic-jaguar.cyclic.app/proses_feedback", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
