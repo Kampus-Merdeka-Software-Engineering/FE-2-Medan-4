@@ -100,9 +100,9 @@ document.addEventListener("DOMContentLoaded", function () {
       message.classList.add("message");
       message.textContent = item.message;
 
-      const timestamp = document.createElement("div");
-      timestamp.classList.add("timestamp");
-      timestamp.textContent = calculateTimeAgo(item.timestamp);
+      const createdAt = document.createElement("div");
+      createdAt.classList.add("createdAt");
+      createdAt.textContent = calculateTimeAgo(item.createdAt);
 
       const commentIcon = document.createElement("i");
       commentIcon.classList.add("fa-regular", "fa-comment");
@@ -110,16 +110,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
       itemElement.appendChild(name);
       itemElement.appendChild(message);
-      itemElement.appendChild(timestamp);
+      itemElement.appendChild(createdAt);
       itemElement.appendChild(commentIcon);
 
       outputSection.appendChild(itemElement);
     });
   }
 
-  function calculateTimeAgo(timestamp) {
-    const currentTimestamp = Date.now();
-    const timeDifference = currentTimestamp - new Date(timestamp).getTime();
+  function calculateTimeAgo(createdAt) {
+    const currentcreatedAt = Date.now();
+    const timeDifference = currentcreatedAt - new Date(createdAt).getTime();
 
     const seconds = Math.floor(timeDifference / 1000);
     const minutes = Math.floor(seconds / 60);
