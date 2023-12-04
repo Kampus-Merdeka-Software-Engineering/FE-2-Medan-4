@@ -38,7 +38,7 @@ document
     };
 
     // Send data to the backend API
-    fetch("https://puzzled-hare-fashion.cyclic.app//proses_qna", {
+    fetch("https://jade-enthusiastic-jaguar.cyclic.app/proses_qna", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentPage = 1;
 
   function loadData() {
-    fetch("https://puzzled-hare-fashion.cyclic.app//return_qna")
+    fetch("https://jade-enthusiastic-jaguar.cyclic.app/return_qna")
       .then((response) => response.json())
       .then((data) => {
         // Mengurutkan data berdasarkan ID terbesar
@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Inisialisasi dan pembaruan tata letak halaman dan navigasi.
-  fetch("https://puzzled-hare-fashion.cyclic.app//return_qna")
+  fetch("https://jade-enthusiastic-jaguar.cyclic.app/return_qna")
     .then((response) => response.json())
     .then((data) => {
       const totalPages = Math.ceil(data.length / itemsPerPage);
