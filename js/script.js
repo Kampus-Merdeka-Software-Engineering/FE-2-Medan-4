@@ -39,7 +39,7 @@ pop.forEach((element) => {
   });
 });
 
-// Category 
+// Category
 const poop = document.querySelectorAll(".boxcat");
 
 poop.forEach((element) => {
