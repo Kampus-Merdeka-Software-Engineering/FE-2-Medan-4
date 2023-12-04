@@ -34,7 +34,6 @@ document
     var formData = {
       name: document.getElementById("name").value,
       message: document.getElementById("message").value,
-      // Tidak perlu lagi menyertakan timestamp di sini
     };
 
     // Send data to the backend API
@@ -65,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const outputSection = document.getElementById("outputSection");
   const paginationContainer = document.getElementById("pagination");
 
-  const itemsPerPage = 3; // Sesuaikan sesuai kebutuhan
+  const itemsPerPage = 3;
   let currentPage = 1;
 
   function loadData() {
@@ -107,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const commentIcon = document.createElement("i");
       commentIcon.classList.add("fa-regular", "fa-comment");
-      commentIcon.style.marginLeft = "90%"; // Sesuaikan jika perlu
+      commentIcon.style.marginLeft = "90%";
 
       itemElement.appendChild(name);
       itemElement.appendChild(message);
@@ -146,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
       pageButton.textContent = i;
       pageButton.addEventListener("click", () => {
         currentPage = i;
-        loadData(); // Memuat data saat halaman berubah
+        loadData();
         updatePagination(totalPages);
       });
 
@@ -161,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const totalPages = Math.ceil(data.length / itemsPerPage);
       loadData(); // Memuat data awal
       updatePagination(totalPages);
-      setInterval(loadData, 5000); // Set interval untuk polling setiap 5 detik
+      setInterval(loadData, 5000);
     })
     .catch((error) => {
       console.error("Error fetching data:", error);
