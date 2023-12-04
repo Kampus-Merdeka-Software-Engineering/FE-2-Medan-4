@@ -118,22 +118,28 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function calculateTimeAgo(createdAt) {
-    const currentcreatedAt = Date.now();
-    const timeDifference = currentcreatedAt - new Date(createdAt).getTime();
+    const createdAtDate = new Date(createdAt);
+
+    if (isNaN(createdAtDate.getTime())) {
+      return "Waktu tidak terdeteksi";
+    }
+
+    const currentCreatedAt = Date.now();
+    const timeDifference = currentCreatedAt - createdAtDate.getTime();
 
     const seconds = Math.floor(timeDifference / 1000);
     const minutes = Math.floor(seconds / 60);
     const hours = Math.floor(minutes / 60);
     const days = Math.floor(hours / 24);
 
-    if (seconds < 60) {
-      return seconds === 1 ? `${seconds} second ago` : `${seconds} seconds ago`;
-    } else if (minutes < 60) {
-      return minutes === 1 ? `${minutes} minute ago` : `${minutes} minutes ago`;
-    } else if (hours < 24) {
-      return hours === 1 ? `${hours} hour ago` : `${hours} hours ago`;
-    } else {
+    if (days > 0) {
       return days === 1 ? `${days} day ago` : `${days} days ago`;
+    } else if (hours > 0) {
+      return hours === 1 ? `${hours} hour ago` : `${hours} hours ago`;
+    } else if (minutes > 0) {
+      return minutes === 1 ? `${minutes} minute ago` : `${minutes} minutes ago`;
+    } else {
+      return seconds === 1 ? `${seconds} second ago` : `${seconds} seconds ago`;
     }
   }
 
