@@ -16,11 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="./assets/img/Logo.png"/>
+    <link rel="shortcut icon" href="./assets/img/Logo.png" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>QnA</title>
   </head>
   <body>
@@ -54,16 +55,19 @@
     </section>
 
     <!--OUTPUT-->
-    <section class="output">
-      <h1>List Question</h1>
+    <section class="output" id="output">
+      <div class="tittle">
+        <h1>List Question</h1>
+        <a href="#qna" class="ctn"><i class="fa-solid fa-pen-to-square"></i></a>
+      </div>
       <section id="outputSection" class="output-container">
         <!-- Output will be dynamically generated here -->
       </section>
       <div id="pagination" class="pagination-container">
         <!-- Pagination controls will be dynamically generated here -->
       </div>
-      <a href="#qna" class="ctn">New Ask</a>
     </section>
+    <br />
 
     <!-- BANNER TITLE -->
     <section class="banner2">

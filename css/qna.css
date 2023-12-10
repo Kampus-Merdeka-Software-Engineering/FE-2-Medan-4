@@ -241,7 +241,7 @@
   font-size: 35px;
   font-weight: 600;
   text-align: center;
-  background-color: #00d3d3;
+  background-color: #005694;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -345,8 +345,11 @@
 .container form .form-row.submit-btn .input-data .inner {
   height: 100%;
   width: 300%;
-  background: #00d3d3;
+  background: #005694;
   position: absolute;
+}
+.container form .form-row.submit-btn:hover .input-data .inner {
+  background: #07e0fd; /* Ganti warna sesuai keinginan pada kondisi hover */
 }
 
 .container form .form-row.submit-btn .input-data:hover .inner {
@@ -456,27 +459,27 @@
 }
 
 /* button new question */
-.ctn {
-  margin-left: 100px;
-  padding-bottom: 8px;
-  padding-left: 15px;
-  padding-right: 15px;
-  color: black;
-  font-size: 15px;
-  font-weight: 600;
-  padding: 11px 18px;
-  background-color: white;
-  cursor: pointer;
-  border: 1px solid rgb(255, 255, 255);
-  outline: none;
-  border-radius: 2rem;
-  text-decoration: none;
+.tittle {
+  display: flex;
+  justify-content: center;
 }
-.ctn:hover {
-  background-color: #07e0fd;
-  border: 1px solid #a0785b;
-  border-radius: 2rem;
-  color: white;
+.tittle h1 {
+  margin-top: 13px;
+}
+.tittle a {
+  margin-top: 10px;
+  margin-left: 200px;
+}
+.ctn {
+  color: #005694;
+  font-size: 30px;
+}
+.ctn :hover {
+  color: #00d3d3;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*Bagian Footer*/

@@ -1,6 +1,6 @@
 let navScroll = window.pageYOffset;
 let screenWidth = window.innerWidth;
-let baseUrl = "https://brainy-elk-swimsuit.cyclic.app/";
+let baseUrl = "https://precious-ring-clam.cyclic.app/";
 
 window.onscroll = function () {
   let currentNavScroll = window.pageYOffset;
@@ -51,14 +51,24 @@ formCustomer.addEventListener("submit", (e) => {
   })
     .then((res) => {
       if (res.ok) {
-        alert("Thank You For Your Message!");
+        Swal.fire({
+          title: "Success!",
+          text: "Your message has been submitted successfully!",
+          icon: "success",
+          theme: "light",
+        });
         firstName.value = "";
         lastName.value = "";
         email.value = "";
         phone.value = "";
         message.value = "";
       } else {
-        alert("Send Message Failed.");
+        Swal.fire({
+          title: "Error!",
+          text: "Failed to submit message. Please try again.",
+          icon: "error",
+          theme: "light",
+        });
       }
     })
     .catch((error) => {
