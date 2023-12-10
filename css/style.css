@@ -57,7 +57,6 @@
 .navbar-right {
   display: flex;
   gap: 60px;
-  font-family: "Open Sans", sans-serif;
 }
 
 .nav-link {
@@ -66,7 +65,6 @@
   text-align: center;
   font-size: 15px;
   font-weight: 550;
-  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   letter-spacing: 1.2px;
   border-bottom: 2px solid transparent;
@@ -75,12 +73,12 @@
 }
 
 .nav-active {
-  color: white;
+  color: #07e0fd;
+  border-bottom: 1px solid white;
   text-decoration: none;
   text-align: center;
   font-size: 15px;
   font-weight: 550;
-  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   letter-spacing: 1.2px;
   padding-top: 10px;
@@ -170,6 +168,7 @@
 
 /*header*/
 .main-home {
+  position: relative;
   width: 100%;
   height: 100vh;
   background-image: url("..//assets/img/home.png");
@@ -180,6 +179,40 @@
   padding-left: 0;
   overflow-x: hidden;
 }
+
+/* Tambahkan lapisan gelap dengan linear gradient dan mix-blend-mode */
+.main-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ); /* Gradient hitam transparan */
+  mix-blend-mode: multiply; /* Efek darken */
+}
+
+/*header text*/
+.header-text {
+  z-index: 1; /* Memastikan teks ada di atas lapisan gelap */
+  color: white; /* Warna teks */
+}
+
+.header-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Bayangan teks untuk meningkatkan kontras */
+  font-size: 36px; /* Ukuran font */
+}
+
+.header-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
 .header-text h1 {
   color: rgb(245, 250, 250);
   font-size: 65px;
@@ -191,7 +224,7 @@
   color: rgb(245, 250, 250);
   font-size: 14px;
   font-weight: 100;
-  margin: 6px 0 10px;
+  margin: 6px 0 10px 15px;
   padding-left: 100px;
   padding-bottom: 20px;
 }
@@ -200,11 +233,11 @@
   padding-bottom: 8px;
   padding-left: 15px;
   padding-right: 15px;
-  color: #f5f5f5;
+  color: black;
   font-size: 15px;
   font-weight: 600;
   padding: 11px 18px;
-  background-color: transparent;
+  background-color: white;
   cursor: pointer;
   border: 1px solid rgb(255, 255, 255);
   outline: none;
@@ -215,6 +248,7 @@
   background-color: #07e0fd;
   border: 1px solid #a0785b;
   border-radius: 2rem;
+  color: white;
 }
 
 /*section category*/
@@ -228,7 +262,7 @@
 .category h1 {
   font-size: 20px;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
+
   color: #ffffff;
   text-align: center;
   position: relative;
@@ -248,8 +282,6 @@
 }
 .category .box-category .boxcat {
   text-align: center;
-  font-family: "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L",
-    "Nimbus Roman No9 L", serif;
   font-size: 15px;
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -270,7 +302,6 @@
 .title {
   font-size: 20px;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
   color: #005694;
   text-align: center;
   position: relative;
@@ -517,7 +548,6 @@
 .news .news-h1 {
   font-size: 25x;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
   color: #005694;
   text-align: center;
   position: relative;
@@ -598,7 +628,6 @@
 .review .review-h1 {
   font-size: 25x;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
   color: #005694;
   text-align: center;
   position: relative;
@@ -693,7 +722,6 @@
 .title-galery {
   font-size: 20px;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
   text-align: center;
   position: relative;
   padding: 20px;

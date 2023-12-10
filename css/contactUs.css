@@ -52,7 +52,6 @@ body {
 .navbar-right {
   display: flex;
   gap: 60px;
-  font-family: "Open Sans", sans-serif;
 }
 
 .nav-link {
@@ -61,7 +60,6 @@ body {
   text-align: center;
   font-size: 15px;
   font-weight: 550;
-  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   letter-spacing: 1.2px;
   border-bottom: 2px solid transparent;
@@ -75,7 +73,6 @@ body {
   text-align: center;
   font-size: 15px;
   font-weight: 550;
-  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   letter-spacing: 1.2px;
   padding-top: 10px;
