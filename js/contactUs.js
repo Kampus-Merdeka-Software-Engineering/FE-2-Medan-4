@@ -1,5 +1,6 @@
 let navScroll = window.pageYOffset;
 let screenWidth = window.innerWidth;
+let baseUrl = "https://brainy-elk-swimsuit.cyclic.app/";
 
 window.onscroll = function () {
   let currentNavScroll = window.pageYOffset;
@@ -41,7 +42,7 @@ formCustomer.addEventListener("submit", (e) => {
     message: message.value,
   };
 
-  fetch("https://jade-enthusiastic-jaguar.cyclic.app/proses_feedback", {
+  fetch(`${baseUrl}/proses_feedback`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
