@@ -1,6 +1,7 @@
 // Navbar
 let navScroll = window.pageYOffset;
 let screenWidth = window.innerWidth;
+let baseUrl = "https://brainy-elk-swimsuit.cyclic.app/";
 
 window.onscroll = function () {
   let currentNavScroll = window.pageYOffset;
@@ -37,7 +38,7 @@ document
     };
 
     // Send data to the backend API
-    fetch("https://jade-enthusiastic-jaguar.cyclic.app/proses_qna", {
+    fetch(`${baseUrl}/proses_qna`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -68,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentPage = 1;
 
   function loadData() {
-    fetch("https://jade-enthusiastic-jaguar.cyclic.app/return_qna")
+    fetch(`${baseUrl}/return_qna`)
       .then((response) => response.json())
       .then((data) => {
         // Mengurutkan data berdasarkan ID terbesar

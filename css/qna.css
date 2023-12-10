@@ -455,6 +455,30 @@
   background-color: #ddd;
 }
 
+/* button new question */
+.ctn {
+  margin-left: 100px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 11px 18px;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid rgb(255, 255, 255);
+  outline: none;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+.ctn:hover {
+  background-color: #07e0fd;
+  border: 1px solid #a0785b;
+  border-radius: 2rem;
+  color: white;
+}
+
 /*Bagian Footer*/
 .footer {
   background-color: #005694;
