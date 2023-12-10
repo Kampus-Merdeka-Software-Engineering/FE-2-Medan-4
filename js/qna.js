@@ -1,8 +1,7 @@
 // Navbar
 let navScroll = window.pageYOffset;
 let screenWidth = window.innerWidth;
-let baseUrl = "https://brainy-elk-swimsuit.cyclic.app/";
-
+let baseUrl = "https://precious-ring-clam.cyclic.app/";
 window.onscroll = function () {
   let currentNavScroll = window.pageYOffset;
   screenWidth = window.innerWidth;
@@ -47,12 +46,26 @@ document
     })
       .then((response) => {
         if (response.ok) {
-          alert("Your message has been submitted successfully!");
-          // Clear form fields
-          document.getElementById("name").value = "";
-          document.getElementById("message").value = "";
+          Swal.fire({
+            title: "Success!",
+            text: "Your question has been submitted successfully!",
+            icon: "success",
+            theme: "light",
+            didClose: () => {
+              // Clear form fields
+              document.getElementById("name").value = "";
+              document.getElementById("message").value = "";
+              // Redirect to the desired section/page
+              window.location.href = "#output";
+            },
+          });
         } else {
-          alert("Failed to submit message. Please try again.");
+          Swal.fire({
+            title: "Error!",
+            text: "Failed to submit message. Please try again.",
+            icon: "error",
+            theme: "light",
+          });
         }
       })
       .catch((error) => {
@@ -161,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Inisialisasi dan pembaruan tata letak halaman dan navigasi.
-  fetch("https://jade-enthusiastic-jaguar.cyclic.app/return_qna")
+  fetch(`${baseUrl}/return_qna`)
     .then((response) => response.json())
     .then((data) => {
       const totalPages = Math.ceil(data.length / itemsPerPage);
