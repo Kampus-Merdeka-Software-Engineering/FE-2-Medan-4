@@ -1,7 +1,7 @@
 // Navbar
 let navScroll = window.pageYOffset;
 let screenWidth = window.innerWidth;
-let baseUrl = "https://precious-ring-clam.cyclic.app/";
+let baseUrl = "https://cute-jade-panama-hat.cyclic.app/";
 window.onscroll = function () {
   let currentNavScroll = window.pageYOffset;
   screenWidth = window.innerWidth;

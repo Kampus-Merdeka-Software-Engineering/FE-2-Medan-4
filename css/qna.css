@@ -468,11 +468,12 @@
 }
 .tittle a {
   margin-top: 10px;
-  margin-left: 200px;
+  margin-left: 21%;
 }
 .ctn {
   color: #005694;
   font-size: 30px;
+  margin-right: 10px;
 }
 .ctn :hover {
   color: #00d3d3;
